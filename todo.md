@@ -7,7 +7,6 @@
 -   [x] Scaffolding
 -   [x] Fass quer fallend
 -   [ ] Grabstein
--   [ ] Fass speziell
--   [ ] Block für den Boden
--   [ ] Feuer, dass sich bewegt
+-   [X] Block für den Boden
+-   [X] Feuer, dass sich bewegt
 -   [ ] Maze
