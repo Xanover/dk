@@ -1,0 +1,13 @@
+-   [x] Brennmaterial (Netherrack)
+-   [ ] Spieler
+-   [ ] Angreifer
+-   [ ] Ziel
+-   [ ] Leiter
+-   [ ] Leiter kaputt
+-   [x] Scaffolding
+-   [x] Fass quer fallend
+-   [ ] Grabstein
+-   [ ] Fass speziell
+-   [ ] Block für den Boden
+-   [ ] Feuer, dass sich bewegt
+-   [ ] Maze
