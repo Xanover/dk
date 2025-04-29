@@ -10,10 +10,12 @@ config_version=5
 
 [application]
 
-config/name="ItemCardSystem"
+config/name="Monkeycraft"
+config/version="0.1.0"
 run/main_scene="uid://cv33ugju8uwb6"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/image="uid://b4ipswoixvngs"
+config/icon="uid://bfbix3x64bdah"
 
 [layer_names]
 
