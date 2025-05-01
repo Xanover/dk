@@ -1,7 +1,7 @@
 - [x] Brennmaterial (Netherrack)
-- [ ] Spieler
-- [ ] Angreifer
-- [ ] Ziel
+- [x] Spieler
+- [x] Angreifer
+- [x] Ziel
 - [x] Leiter
 - [x] Leiter kaputt
 - [x] Scaffolding
