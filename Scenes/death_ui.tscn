@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq6yvamtdw7kn"]
+
+[ext_resource type="Texture2D" uid="uid://c0o3bosj642d" path="res://Assets/MrCrabsViolin.png" id="1_1dd5l"]
+[ext_resource type="Script" uid="uid://ctpkbkcn17ldq" path="res://Scripts/death_ui.gd" id="1_4u8u3"]
+
+[node name="Death_UI" type="Control"]
+z_index = 99
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4u8u3")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 325.0
+offset_top = 177.0
+offset_right = 809.0
+offset_bottom = 514.0
+texture = ExtResource("1_1dd5l")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 508.0
+offset_top = 124.0
+offset_right = 617.0
+offset_bottom = 147.0
+text = "WOMP WOMP"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 524.0
+offset_top = 539.0
+offset_right = 605.0
+offset_bottom = 570.0
+text = "Try Again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

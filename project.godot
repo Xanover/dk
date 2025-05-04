@@ -12,10 +12,14 @@ config_version=5
 
 config/name="Monkeycraft"
 config/version="0.1.0"
-run/main_scene="uid://cv33ugju8uwb6"
+run/main_scene="uid://dfwass43gahx3"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/image="uid://b4ipswoixvngs"
 config/icon="uid://bfbix3x64bdah"
+
+[global_group]
+
+Player=""
 
 [layer_names]
 

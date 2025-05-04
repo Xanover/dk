@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cuf0itflnvuq5"]
+[gd_scene load_steps=7 format=3 uid="uid://cuf0itflnvuq5"]
 
 [ext_resource type="Texture2D" uid="uid://0jclt540t2fe" path="res://icon.svg" id="1_khaq0"]
 [ext_resource type="Script" uid="uid://djdqdpi2ebuym" path="res://Scripts/test_player.gd" id="1_qkid2"]
 [ext_resource type="PackedScene" uid="uid://doviccxdp5the" path="res://Scenes/inventory.tscn" id="3_4mu7t"]
+[ext_resource type="PackedScene" uid="uid://dq6yvamtdw7kn" path="res://Scenes/death_ui.tscn" id="4_3a3hx"]
 [ext_resource type="PackedScene" uid="uid://7q1dx8wa2nd6" path="res://Scenes/ladder_interaction.tscn" id="4_qv8u8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4mu7t"]
@@ -26,5 +27,13 @@ offset_left = -132.0
 offset_top = -66.0
 offset_right = -132.0
 offset_bottom = -66.0
+
+[node name="Death_UI" parent="Camera2D" instance=ExtResource("4_3a3hx")]
+visible = false
+offset_left = -159.0
+offset_top = -88.0
+offset_right = -159.0
+offset_bottom = -88.0
+scale = Vector2(0.28, 0.24)
 
 [node name="Ladder_Interaction" parent="." instance=ExtResource("4_qv8u8")]

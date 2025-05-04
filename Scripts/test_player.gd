@@ -7,12 +7,14 @@ extends CharacterBody2D
 @onready var Inventory = $Camera2D/Inventory
 @onready var sprite = $Sprite2D
 @onready var ladder_interact = $Ladder_Interaction
+@onready var death_UI = $Camera2D/Death_UI
 
 var is_on_ladder:bool = false
 
 func _ready() -> void:
 	Inventory.initialize(self) # pass reference to self so that inventory knows which scene is player
 	ladder_interact.initialize(self) # pass reference to self so that ladder knows which scene is player
+	death_UI.intialize(self)
 	
 func add_item_to_inventory(itemID:int):
 	Inventory.add_item(itemID)
