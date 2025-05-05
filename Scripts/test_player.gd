@@ -32,6 +32,12 @@ func _physics_process(delta):
 	# Only allow jumping when on the ground
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocity.y = jump_speed
+	
+	if Input.is_action_just_pressed("ui_right"):
+		sprite.flip_h = false
+	
+	if Input.is_action_just_pressed("ui_left"):
+		sprite.flip_h = true
 
 func setSprite(path):
 	sprite.texture = load(path)

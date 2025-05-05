@@ -1,22 +1,25 @@
 [gd_scene load_steps=7 format=3 uid="uid://cuf0itflnvuq5"]
 
-[ext_resource type="Texture2D" uid="uid://0jclt540t2fe" path="res://icon.svg" id="1_khaq0"]
 [ext_resource type="Script" uid="uid://djdqdpi2ebuym" path="res://Scripts/test_player.gd" id="1_qkid2"]
+[ext_resource type="Texture2D" uid="uid://dilwlq5xjsjg3" path="res://Assets/steve.png" id="2_3a3hx"]
 [ext_resource type="PackedScene" uid="uid://doviccxdp5the" path="res://Scenes/inventory.tscn" id="3_4mu7t"]
 [ext_resource type="PackedScene" uid="uid://dq6yvamtdw7kn" path="res://Scenes/death_ui.tscn" id="4_3a3hx"]
 [ext_resource type="PackedScene" uid="uid://7q1dx8wa2nd6" path="res://Scenes/ladder_interaction.tscn" id="4_qv8u8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4mu7t"]
-size = Vector2(12, 12)
+size = Vector2(5, 16)
 
 [node name="TestPlayer" type="CharacterBody2D"]
 script = ExtResource("1_qkid2")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("1_khaq0")
+texture_filter = 1
+scale = Vector2(0.16, 0.16)
+texture = ExtResource("2_3a3hx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_4mu7t")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -37,3 +40,5 @@ offset_bottom = -88.0
 scale = Vector2(0.28, 0.24)
 
 [node name="Ladder_Interaction" parent="." instance=ExtResource("4_qv8u8")]
+position = Vector2(-0.5, 0)
+scale = Vector2(0.6, 2)
