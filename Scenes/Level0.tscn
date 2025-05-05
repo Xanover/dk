@@ -23,6 +23,7 @@ texture = ExtResource("2_gw158")
 6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
 7:0/0 = 0
 0:1/0 = 0
+0:1/0/physics_layer_1/polygon_0/points = PackedVector2Array(-4, 4, -4, 8, 4, 8, 4, -8, -4, -8)
 1:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
@@ -67,6 +68,8 @@ texture = ExtResource("2_gw158")
 
 [sub_resource type="TileSet" id="TileSet_u0hpv"]
 physics_layer_0/collision_layer = 1
+physics_layer_1/collision_layer = 2
+physics_layer_1/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_v3lif")
 
 [node name="Level0" type="Node2D"]
@@ -91,6 +94,7 @@ position = Vector2(-71, -138)
 can_sleep = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+visible = false
 scale = Vector2(0.5, 0.5)
 transform = Transform2D(0.5, 0, 0, 0.5, 0, 0)
 
