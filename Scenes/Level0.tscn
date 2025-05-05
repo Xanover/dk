@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://dfwass43gahx3"]
+[gd_scene load_steps=12 format=4 uid="uid://dfwass43gahx3"]
 
 [ext_resource type="Texture2D" uid="uid://b31lmd1jxt0mn" path="res://Assets/tilemap.png" id="2_gw158"]
 [ext_resource type="PackedScene" uid="uid://cuf0itflnvuq5" path="res://Scenes/test_player.tscn" id="2_uec86"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dabja8gy4h35t" path="res://Assets/TestBackground/BG_01.png" id="5_u0hpv"]
 [ext_resource type="Texture2D" uid="uid://c0jsbaqssdkt8" path="res://Assets/TestBackground/BG_03.png" id="6_s0o5q"]
 [ext_resource type="Texture2D" uid="uid://duygjmdqclsfl" path="res://Assets/TestBackground/BG_02.png" id="7_csver"]
+[ext_resource type="Texture2D" uid="uid://b0eogjaljnarg" path="res://Assets/alex.png" id="9_s0o5q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v3lif"]
 texture = ExtResource("2_gw158")
@@ -76,7 +77,7 @@ sources/0 = SubResource("TileSetAtlasSource_v3lif")
 texture_filter = 1
 
 [node name="TestPlayer" parent="." groups=["Player"] instance=ExtResource("2_uec86")]
-position = Vector2(56, -102)
+position = Vector2(95, -3)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(0, -1)
@@ -85,7 +86,7 @@ tile_map_data = PackedByteArray("AAD9/wEAAAAEAAEAAAD+/wEAAAAEAAEAAAAAAAEAAAAEAAE
 tile_set = SubResource("TileSet_u0hpv")
 
 [node name="Zombie" type="Sprite2D" parent="."]
-position = Vector2(-99, -167)
+position = Vector2(-99, -166.8)
 scale = Vector2(0.241379, 0.25)
 texture = ExtResource("3_gw158")
 
@@ -138,3 +139,9 @@ motion_mirroring = Vector2(1024, 0)
 texture_filter = 1
 texture = ExtResource("5_7wlkr")
 centered = false
+
+[node name="Alex" type="Sprite2D" parent="."]
+position = Vector2(-79, -161.8)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("9_s0o5q")
+flip_h = true
